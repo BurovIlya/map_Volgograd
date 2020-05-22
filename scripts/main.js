@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    choosingMap.options[0].selected = true;
-    initMap(dataset1, legend1);
-});
-
 const choosingMap = document.getElementById('choosingMap');
 const myMap = document.querySelector('svg.map');
 const mapLegend = document.querySelector('ul.caption-list');
@@ -177,4 +172,9 @@ choosingMap.addEventListener('change', function() {
            break; 
     } 
     
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    choosingMap.options[0].selected = true;
+    initMap(dataset1, legend1);
 });
